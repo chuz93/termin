@@ -42,12 +42,19 @@ group :development, :test do
 end
 
 group :development do
-  # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
-  gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  # Gem to display errors better. Read more: https://github.com/charliesome/better_errors
+  gem 'better_errors'
+  # pry-rescue is an implementation of "break on unhandled exception" for Ruby.
+  # Whenever an exception is raised, but not rescued, pry-rescue
+  # will automatically open Pry for you. Read more: https://github.com/ConradIrwin/pry-rescue
+  gem 'pry-rescue'
+  gem 'pry-stack_explorer'
+  # This is a small gem which causes rails console to open pry. Read more: https://github.com/rweng/pry-rails
+  gem 'pry-rails'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
